@@ -18,7 +18,7 @@ body {
 }
 h3{
     color:#ffffff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 p,
 button,
@@ -37,17 +37,17 @@ h4,
 button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
+    
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 p,
 h4 {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 button {
@@ -100,7 +100,7 @@ header button {
     grid-area: content__section;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-areas: ". playlist__one ." ". playlist__two .";
+    grid-template-areas: ". playlist__one ." ". playlist__two ." ". playlist__three ." ". playlist__four .";
     margin-bottom: 60px;
 }
 
@@ -110,6 +110,12 @@ header button {
 
 .playlist__two {
     grid-area: playlist__two;
+}
+.playlist__three{
+    grid-area: playlist__three;
+}
+.playlist__four{
+    grid-area: playlist__four;
 }
 
 .playlist__title {
@@ -154,7 +160,7 @@ header button {
 }
 
 @media only screen and (max-width: 1200px) {
-    .video {
+    .video  {
         grid-column-start: span 6;
         height: 240px;
     }
@@ -165,3 +171,4 @@ header button {
         grid-column-start: span 12;
     }
 }
+
